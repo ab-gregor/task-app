@@ -30,7 +30,9 @@ const onSubmit=(e) =>{
                 checked={reminder}
                   value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)}
                 />
-            </div> 
+                </div>
+                <input type='submit' value='Save Task'/>
+             
     </form>
   )
 }

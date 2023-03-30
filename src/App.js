@@ -52,9 +52,11 @@ const addTask = (task) => {
          
       <div className="task">
       <Button color="green" text="Add New" tcolor="black" onClick={() => setShowAddTask(!showAddTask)}></Button>
-      {showAddTask && <AddTask/>}
+      { <AddTask onAdd={addTask}/>}
+      { tasks.length > 0 ?
       <Tasks tasks={tasks} onClick={deleteTask}/>
-      
+    :'No tasks Left'  
+    }
       </div>
       </header>
       <Footer thom='Copyright 2023'></Footer>
