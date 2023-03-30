@@ -1,12 +1,12 @@
 import React from 'react'
-import {FaSkullCrossbones} from 'react-icons/fa'
+import {RxCross1} from 'react-icons/rx'
 const Task = ({tselect,onClick}) => {
   return (
     <div class="cont-for-task">
         <h3 style={{width: 200}}>
             {tselect.text}
 
-            <FaSkullCrossbones style={{fontSize:20,color:"red",alignItems:"end"}}onClick={()=>onClick(tselect.id)}></FaSkullCrossbones>
+            <RxCross1 style={{fontSize:20,color:"red",alignItems:"end"}}onClick={()=>onClick(tselect.id)}></RxCross1>
         </h3>
     </div>
   )
