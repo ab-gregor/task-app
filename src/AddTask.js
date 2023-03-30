@@ -23,7 +23,14 @@ const onSubmit=(e) =>{
     <div className='form-field'>
         <input type='text' placeholder='Add task name'
         value={text} onChange={(e) => setText(e.target.value)}/>
-        </div>    
+        </div>   
+        <div className='form-field'>
+                <label>Set Reminder</label>
+                <input type='checkbox'
+                checked={reminder}
+                  value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)}
+                />
+            </div> 
     </form>
   )
 }
