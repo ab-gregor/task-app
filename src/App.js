@@ -31,11 +31,12 @@ const onDelete = (id)=>{
   return (
     <div className="App">
       <header className="App-header">
-       <h1>Hello</h1> 
+       <h1>Task Scheduler</h1> 
          
-      <div id="task">
+      <div class="task">
+      <Button color="green" text="Add New" tcolor="black"></Button>
       <Tasks tasks={tasks} onClick={onDelete}/>
-      <Button color="green" text="Add" tcolor="black"></Button>
+      
       </div>
       </header>
       <Footer thom='Copyright 2023'></Footer>

@@ -2,12 +2,15 @@
   text-align: center;
 }
 
-#task{
+.task{
   border: 2px;
   border-style: dotted;
   padding: 20px;
 }
-
+.cont-for-task{
+  background-color: aliceblue;
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

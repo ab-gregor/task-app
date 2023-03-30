@@ -5,7 +5,7 @@ const Button = ({color,text,tcolor}) => {
 
 
   return (
-    <div style={{backgroundColor:color,color:tcolor}}>{text}</div>
+    <div style={{backgroundColor:color,color:tcolor,width:"fit-content"}}>{text}</div>
   )
 }
 
