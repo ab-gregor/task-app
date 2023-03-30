@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Button = ({color,text,tcolor}) => {
+const Button = ({color,text,tcolor,onClick}) => {
     
 
 
   return (
-    <div style={{backgroundColor:color,color:tcolor,width:"fit-content"}}>{text}</div>
+    <div style={{backgroundColor:color,color:tcolor,width:"fit-content"}} onClick={onClick}>{text}</div>
   )
 }
 

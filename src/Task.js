@@ -2,7 +2,7 @@ import React from 'react'
 import {RxCross1} from 'react-icons/rx'
 const Task = ({tselect,onClick}) => {
   return (
-    <div class="cont-for-task">
+    <div className="cont-for-task">
         <h3 style={{width: 200}}>
             {tselect.text}
 

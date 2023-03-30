@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Button from './Button';
 import AddTask from './AddTask';
 function App() {
-  const[showAddTask,setShowAddTask]=useState(false);
+let[showAddTask,setShowAddTask]=useState(false);
 const[tasks,setTask]=useState([
 {
   id:1,
@@ -40,6 +40,14 @@ const addTask = (task) => {
 
    const newTask = { id, ...task}
    setTask([...tasks, newTask])
+
+   
+}
+
+const ChangeView=() =>
+{ {console.log("ffff")}
+  setShowAddTask(showAddTask=!showAddTask)
+  {console.log("ssss")}
 }
 
 
@@ -51,8 +59,9 @@ const addTask = (task) => {
 
          
       <div className="task">
-      <Button color="green" text="Add New" tcolor="black" onClick={() => setShowAddTask(!showAddTask)}></Button>
-      { <AddTask onAdd={addTask}/>}
+      <Button color="green" text="Add New" tcolor="black" onClick={ChangeView}></Button>
+      
+      {showAddTask && <AddTask onAdd={addTask}/>}
       { tasks.length > 0 ?
       <Tasks tasks={tasks} onClick={deleteTask}/>
     :'No tasks Left'  
