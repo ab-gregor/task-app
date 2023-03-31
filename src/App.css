@@ -1,11 +1,24 @@
 .App {
   text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lavender;
+  min-height:600px;
 }
 
 .task{
   border: 2px;
-  border-style: dotted;
+  border-style: dashed;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: rebeccapurple;
 }
 .cont-for-task{
   background-color: aliceblue;
@@ -24,13 +37,13 @@
 
 .App-header {
   background-color: lavender;
-  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: grey;
+  color: black;
 }
 
 .App-link {

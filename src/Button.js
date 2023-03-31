@@ -5,7 +5,7 @@ const Button = ({color,text,tcolor,onClick}) => {
 
 
   return (
-    <div style={{backgroundColor:color,color:tcolor,width:"fit-content"}} onClick={onClick}>{text}</div>
+    <div style={{backgroundColor:color,color:tcolor,width:"fit-content",fontSize:15}} onClick={onClick}>{text}</div>
   )
 }
 
